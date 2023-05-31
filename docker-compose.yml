@@ -1,4 +1,4 @@
-version: "3.7"
+version: "2.17.3"
 services:
   ecommerce-backend:
     container_name: ecommerce-backend
