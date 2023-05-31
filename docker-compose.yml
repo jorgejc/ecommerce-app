@@ -5,6 +5,8 @@ services:
     image: ecommerce-backend:v1
     build:
       context: .
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - "4001:4001"
     networks:
