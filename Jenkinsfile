@@ -13,7 +13,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo "Etapa Deploy no está disponible"
+                sh "export PATH=$PATH:/usr/bin"
+                sh "docker-compose down -v"
+                sh "docker-compose up -d --build"
             }
         }
     }
