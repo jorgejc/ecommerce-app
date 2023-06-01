@@ -13,8 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh "docker-compose down -v"
-                sh "docker-compose up -d --build"
+                echo "Etapa Deploy no está disponible"
             }
         }
     }
