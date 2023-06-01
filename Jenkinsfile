@@ -13,7 +13,6 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh "export PATH=$PATH:/usr/bin"
                 sh "docker-compose down -v"
                 sh "docker-compose up -d --build"
             }
