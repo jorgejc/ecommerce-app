@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const Marca = require('../models/Marca');
-const { validarMarca } = require('../helpers/validar-marca');
+//const { validarMarca } = require('../helpers/validar-marca');
 
 const router = Router();
 
